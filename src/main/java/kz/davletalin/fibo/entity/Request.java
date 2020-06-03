@@ -52,7 +52,21 @@ public class Request {
         this.dateTime = dateTime;
     }
 
+    public long getFiboIndex() {
+        return fiboIndex;
+    }
 
+    public void setFiboIndex(long fiboIndex) {
+        this.fiboIndex = fiboIndex;
+    }
+
+    public String getFiboValue() {
+        return fiboValue;
+    }
+
+    public void setFiboValue(String fiboValue) {
+        this.fiboValue = fiboValue;
+    }
 
     public Status getStatus() {
         return status;
@@ -60,5 +74,16 @@ public class Request {
 
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "Request{" +
+                "id=" + id +
+                ", dateTime=" + dateTime +
+                ", fiboIndex=" + fiboIndex +
+                ", fiboValue='" + fiboValue + '\'' +
+                ", status=" + status +
+                '}';
     }
 }

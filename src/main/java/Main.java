@@ -40,6 +40,9 @@ public class Main {
                 for (Object o : query.list()) {
                     System.out.println("  " + o);
                 }
+
+
+
             }
         } finally {
             session.close();
